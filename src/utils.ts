@@ -13,3 +13,17 @@ export function memoize<Key , Value> (fn: Function): Function {
     return result;
   }
 }
+
+export function getAverageInArray(arr: Array<number>): number {
+  const sum = arr.reduce((acc: number, item: number) => acc + item, 0);
+
+  return sum / arr.length;
+}
+
+export function getMinInArray(arr: Array<number>): number {
+  return arr.reduce((acc: number, item: number) => acc < item ? acc : item, Infinity)
+}
+
+export function getMaxInArray(arr: Array<number>): number {
+  return arr.reduce((acc: number, item: number) => acc > item ? acc : item, -Infinity)
+}
