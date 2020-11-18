@@ -1,4 +1,4 @@
-import IObserver from "../../interface/IObserver";
+import IObserver from "../../Core/IObserver";
 import IWeatherData from "../interface/IWeatherData";
 import IWeatherDisplay from "../interface/IWeatherDisplay";
 import {getAverageInArray} from "../../../../utils";

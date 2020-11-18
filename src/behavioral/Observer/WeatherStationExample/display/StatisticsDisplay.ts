@@ -1,6 +1,6 @@
 import IWeatherDisplay from "../interface/IWeatherDisplay";
 import IWeatherData from "../interface/IWeatherData";
-import IObserver from "../../interface/IObserver";
+import IObserver from "../../Core/IObserver";
 import {getAverageInArray, getMinInArray, getMaxInArray} from "../../../../utils";
 
 export default class StatisticsDisplay implements IObserver<IWeatherData>, IWeatherDisplay {

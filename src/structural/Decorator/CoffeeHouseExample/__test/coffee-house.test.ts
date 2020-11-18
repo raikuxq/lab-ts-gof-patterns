@@ -6,7 +6,7 @@ import MochaCondiment from "../condiment/MochaCondiment";
 
 describe("Coffee House", () => {
 
-  describe("coffee condiments", () => {
+  describe("coffee multiple condiments", () => {
 
     let espresso: IBeverage = new Espresso();
 
@@ -22,7 +22,7 @@ describe("Coffee House", () => {
       expect(espresso.description()).toContain("_WITH_SOY");
     });
 
-    test("should have soy condiment", () => {
+    test("should have mocha condiment", () => {
       expect(espresso.description()).toContain("_WITH_MOCHA");
     });
 

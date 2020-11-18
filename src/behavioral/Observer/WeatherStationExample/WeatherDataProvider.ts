@@ -1,4 +1,4 @@
-import AbstractObservable from "../abstract/AbstractObservable";
+import AbstractObservable from "../Core/AbstractObservable";
 import IWeatherData from "./interface/IWeatherData";
 import IWeatherDataProvider from "./interface/IWeatherDataProvider";
 

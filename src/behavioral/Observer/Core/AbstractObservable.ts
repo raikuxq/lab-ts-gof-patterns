@@ -1,5 +1,5 @@
-import IObservable from "../interface/IObservable";
-import IObserver from "../interface/IObserver";
+import IObservable from "./IObservable";
+import IObserver from "./IObserver";
 
 export default abstract class AbstractObservable<T> implements IObservable<T> {
 
