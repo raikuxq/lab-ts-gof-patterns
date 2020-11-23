@@ -1,3 +1,3 @@
 export default interface IWeatherDisplay {
-  display(): string | void;
+  display(): string;
 }

@@ -40,7 +40,6 @@ export default class ForecastDisplay implements IObserver<IWeatherData>, IWeathe
       'FORECAST_PRESSURE:' + this.getForecastPressure()
     ;
 
-    console.log(message);
     return message;
   }
 

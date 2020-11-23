@@ -17,7 +17,6 @@ export default class CurrentConditionsDisplay implements IObserver<IWeatherData>
       'CURRENT_TEMPERATURE:' + this._temperature +
       'CURRENT_HUMBLE:' + this._humble;
 
-    console.log(message);
     return message;
   }
 
