@@ -2,6 +2,10 @@
 
 Written in Node + TypeScript, tests in Jest.
 
+## Creational
++ Singleton
+  + [Chocolate Boiler](src/creational/Singleton/ChocolateBoilerExample/ChocolateBoiler.ts)
+
 ## Structural
 + Decorator
   + [Coffee House](src/structural/Decorator/CoffeeHouseExample)
