@@ -1,11 +1,11 @@
 import ChocolateBoiler from "../ChocolateBoiler";
 
 describe("chocolate boiler", () => {
+
   const boiler1: ChocolateBoiler = ChocolateBoiler.getInstance();
   const boiler2: ChocolateBoiler = ChocolateBoiler.getInstance();
+
   describe("multiple objects", () => {
-
-
     test("should have same instance", () => {
       expect(boiler1).toBe(boiler2);
     });
