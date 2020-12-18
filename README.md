@@ -7,6 +7,8 @@ Written in Node + TypeScript, tests in Jest.
   + [Chocolate Boiler](src/creational/Singleton/ChocolateBoilerExample/ChocolateBoiler.ts)
 + Factory
   + [Pizza Store](src/creational/Factory/PizzaExample)
++ Abstract Factory
+  + [Pizza Store](src/creational/AbstractFactory/PizzaExample)
 
 ## Structural
 + Decorator
