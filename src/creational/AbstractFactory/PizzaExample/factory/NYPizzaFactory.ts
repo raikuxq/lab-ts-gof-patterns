@@ -2,12 +2,13 @@ import AbstractPizzaFactory from "../AbstractPizzaFactory";
 import IPizza from "../IPizza";
 import NYStyleCheesePizza from "../style/NY/NYStyleCheesePizza";
 import NYStylePepperoniPizza from "../style/NY/NYStylePepperoniPizza";
+import PizzaType from "../PizzaType";
 
 export default class NYPizzaFactory extends AbstractPizzaFactory {
-  createPizza(type: string): IPizza {
+  createPizza(type: PizzaType): IPizza {
     switch (type) {
-      case 'cheese': return new NYStyleCheesePizza();
-      case 'pepperoni': return new NYStylePepperoniPizza();
+      case PizzaType.Cheese: return new NYStyleCheesePizza();
+      case PizzaType.Pepperoni: return new NYStylePepperoniPizza();
       default: throw new Error("Unexpected pizza type");
     }
   }

@@ -1,10 +1,12 @@
 import IPizza from "./IPizza";
+import AbstractDough from "./ingridient/AbstractDough";
+import AbstractSauce from "./ingridient/AbstractSauce";
 
 export default abstract class AbstractPizza implements IPizza {
 
-  public abstract dough: string;
   public abstract name: string;
-  public abstract sauce: string;
+  public abstract dough: AbstractDough;
+  public abstract sauce: AbstractSauce;
 
   public prepare() {
     console.log('Action:Prepare');

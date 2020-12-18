@@ -1,10 +1,14 @@
 import AbstractPizza from "../AbstractPizza";
+import CheeseSauce from "../ingridient/sauce/CheeseSauce";
+import AbstractSauce from "../ingridient/AbstractSauce";
+import AbstractDough from "../ingridient/AbstractDough";
+import FatDough from "../ingridient/dough/FatDough";
 
 export default class CheesePizza extends AbstractPizza {
 
   protected _name: string = 'Cheese pizza';
-  protected _sauce: string = 'Cheese sauce';
-  protected _dough: string = 'Cheese dough';
+  protected _sauce: AbstractSauce = new CheeseSauce();
+  protected _dough: AbstractDough = new FatDough();
 
   public constructor() {
     super();
@@ -14,11 +18,11 @@ export default class CheesePizza extends AbstractPizza {
     return this._name;
   }
 
-  get sauce(): string {
+  get sauce(): AbstractSauce {
     return this._sauce;
   }
 
-  get dough(): string {
+  get dough(): AbstractDough {
     return this._dough;
   }
 }

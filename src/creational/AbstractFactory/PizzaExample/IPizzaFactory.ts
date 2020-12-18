@@ -1,5 +1,6 @@
 import IPizza from "./IPizza";
+import PizzaType from "./PizzaType";
 
 export default interface IPizzaFactory {
-  createPizza(type: string): IPizza;
+  createPizza(type: PizzaType): IPizza;
 }

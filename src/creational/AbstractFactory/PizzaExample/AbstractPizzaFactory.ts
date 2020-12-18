@@ -3,12 +3,13 @@ import IPizza from "./IPizza";
 
 import CheesePizza from "./pizza/CheesePizza";
 import PepperoniPizza from "./pizza/PepperoniPizza";
+import PizzaType from "./PizzaType";
 
 export default abstract class AbstractPizzaFactory implements IPizzaFactory {
-  createPizza(type: string): IPizza {
+  createPizza(type: PizzaType): IPizza {
     switch (type) {
-      case 'cheese': return new CheesePizza();
-      case 'pepperoni': return new PepperoniPizza();
+      case PizzaType.Cheese: return new CheesePizza();
+      case PizzaType.Pepperoni: return new PepperoniPizza();
       default: throw new Error("Unexpected pizza type");
     }
   }
