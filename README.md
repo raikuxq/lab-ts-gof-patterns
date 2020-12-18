@@ -5,6 +5,8 @@ Written in Node + TypeScript, tests in Jest.
 ## Creational
 + Singleton
   + [Chocolate Boiler](src/creational/Singleton/ChocolateBoilerExample/ChocolateBoiler.ts)
++ Factory
+  + [Pizza Store](src/creational/Factory/PizzaExample)
 
 ## Structural
 + Decorator
