@@ -2,23 +2,11 @@ import AbstractPizza from "../AbstractPizza";
 
 export default class PepperoniPizza extends AbstractPizza {
 
-  private _name: string = 'Pepperoni pizza';
-  private _sauce: string = 'Pepperoni sauce';
-  private _dough: string = 'Pepperoni dough';
+  _name: string = 'Pepperoni pizza';
+  _sauce: string = 'Garlic sauce';
+  _dough: string = 'Fat dough';
 
   public constructor() {
     super();
-  }
-
-  get name(): string {
-    return this._name;
-  }
-
-  get sauce(): string {
-    return this._sauce;
-  }
-
-  get dough(): string {
-    return this._dough;
   }
 }

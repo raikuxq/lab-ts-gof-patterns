@@ -2,9 +2,9 @@ import IPizza from "./IPizza";
 
 export default abstract class AbstractPizza implements IPizza {
 
-  public abstract dough: string;
-  public abstract name: string;
-  public abstract sauce: string;
+  protected abstract _dough: string;
+  protected abstract _name: string;
+  protected abstract _sauce: string;
 
   public prepare() {
     console.log('Action:Prepare');
@@ -20,5 +20,17 @@ export default abstract class AbstractPizza implements IPizza {
 
   public bake() {
     console.log('Action:Bake');
+  }
+
+  public get dough() {
+    return this._dough;
+  }
+
+  public get sauce() {
+    return this._sauce;
+  }
+
+  public get name() {
+    return this._name;
   }
 }

@@ -1,28 +1,21 @@
 import AbstractPizza from "../AbstractPizza";
-import AbstractSauce from "../ingridient/AbstractSauce";
-import GarlicSauce from "../ingridient/sauce/GarlicSauce";
-import AbstractDough from "../ingridient/AbstractDough";
-import ThinDough from "../ingridient/dough/ThinDough";
+import AbstractIngredientStyle from "../AbstractIngredientStyle";
+import AbstractDough from "../ingredient/AbstractDough";
+import AbstractSauce from "../ingredient/AbstractSauce";
+import AbstractCheese from "../ingredient/AbstractCheese";
 
 export default class PepperoniPizza extends AbstractPizza {
 
-  protected _name: string = 'Pepperoni pizza';
-  protected _sauce: AbstractSauce = new GarlicSauce();
-  protected _dough: AbstractDough = new ThinDough();
+  protected _dough: AbstractDough;
+  protected _sauce: AbstractSauce;
+  protected _cheese: AbstractCheese;
+  protected _name: string;
 
-  public constructor() {
+  public constructor(style: AbstractIngredientStyle, name?: string) {
     super();
-  }
-
-  get name(): string {
-    return this._name;
-  }
-
-  get sauce(): AbstractSauce {
-    return this._sauce;
-  }
-
-  get dough(): AbstractDough {
-    return this._dough;
+    this._name = name ? name : 'Pepperoni Pizza'
+    this._dough = style.createDough();
+    this._sauce = style.createSauce();
+    this._cheese = style.createCheese();
   }
 }
